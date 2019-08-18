@@ -30,8 +30,12 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
   <!-- CSS Files -->
   <link href="../assets/css/material-dashboard.css?v=2.1.0" rel="stylesheet" />
+    <link href="../assets/timeline2/timeline2.css" rel="stylesheet" />
   <!-- CSS Just for demo purpose, don't include it in your project -->
   <link href="../assets/demo/demo.css" rel="stylesheet" />
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 
 <body class="">
@@ -301,7 +305,7 @@
             <div class="collapse" id="mapsExamples">
               <ul class="nav">
                 <li class="nav-item ">
-                  <a class="nav-link" href="../examples/maps/google.html">
+             <!--    <a class="nav-link" href="../examples/maps/google.html"> -->
                     <span class="sidebar-mini"> GM </span>
                     <span class="sidebar-normal"> Google Maps </span>
                   </a>
@@ -415,9 +419,12 @@
         </div>
       </nav>
       <!-- End Navbar -->
+	  
       <div class="content">
         <div class="container-fluid">
           <div class="row">
+		  
+<!-- TASKS TO DO-->
             <div class="col-lg-6 col-md-6">
               <div class="card">
                 <div class="card-header card-header-tabs card-header-rose">
@@ -662,8 +669,12 @@
                   </div>
                 </div>
               </div>
-            </div>		
-            <div class="col-lg-6 col-md-6">		
+            </div>	
+ <!-- END TASK TODO-->
+
+ <!-- TIMELINE FOR SCHEDULER--> 
+            <div class="col-lg-6 col-md-6">	
+			
                 <div class="md-form col-md-5 justify-content-center">				
 				<input placeholder="Selected date" type="text" id="date-picker-example" class="form-control datepicker">
 				<label for="date-picker-example">Date of scheduler</label>
@@ -738,11 +749,37 @@
                   </div>
                 </li>
               </ul>
-			  </div>			  
-             </div>  		
-			 <div class="row">
-			<div class="col-md-12 col-lg-12 ml-auto mr-auto">
-              <div class="page-categories">
+			  </div>
+ <!-- END TIMELINE FOR SCHEDULER->	
+ 
+ <!-- TIME LINE FOR NEWSES FROM OGANISATIONS-->			 
+ <div class="container mt-5 mb-5">
+		<div class="col-lg-6 col-md-6 offset-md-4">
+			<h4>Latest News from organisation</h4>
+			<ul class="timeline2">
+				<li>
+					<a target="_blank" href="https://www.totoprayogo.com/#">Uwaga zmiana godzin!!</a>
+					<a href="#" class="float-right">21 March, 2014</a>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque scelerisque diam non nisi semper, et elementum lorem ornare. Maecenas placerat facilisis mollis. Duis sagittis ligula in sodales vehicula....</p>
+				</li>
+				<li>
+					<a href="#">Odwołane warsztaty</a>
+					<a href="#" class="float-right">4 March, 2014</a>
+					<p>Curabitur purus sem, malesuada eu luctus eget, suscipit sed turpis. Nam pellentesque felis vitae justo accumsan, sed semper nisi sollicitudin...</p>
+				</li>
+				<li>
+					<a href="#">Godziny odjazdów autobusów</a>
+					<a href="#" class="float-right">1 April, 2014</a>
+					<p>Fusce ullamcorper ligula sit amet quam accumsan aliquet. Sed nulla odio, tincidunt vitae nunc vitae, mollis pharetra velit. Sed nec tempor nibh...</p>
+				</li>
+			</ul>
+		</div>
+</div>
+ <!-- END -->	
+ 
+ <!-- MAPS-->			  
+			<div class="col-md-6 col-lg-6 >
+             <div class="page-categories">
                 <h3 class="title text-center">Maps & Details</h3>
                 <br />
                 <ul class="nav nav-pills nav-pills-warning nav-pills-icons justify-content-center" role="tablist">
@@ -770,22 +807,12 @@
                 <div class="tab-content tab-space tab-subcategories">
                   <div class="tab-pane" id="link7">
                     <div class="card">
-                      <div class="card-header">
-                        <h4 class="card-title">Adresses of dormitory during event</h4>
-                        <p class="card-category">
-                          More information here
-                        </p>
-                      </div>
-                      <div class="card-body">
-					  
-					   <div class="row">
-			<div class="col-md-5 col-lg-8"> <!--ml-auto mr-auto">		-->	
+                      <div class="card-body">				  
+			 <div class="row">		 
+			<div class="col-md-10 col-lg-10"> 
                   <div class="table-responsive">
                       <table class="table">
                         <thead class="">
-                          <th>
-                            ID
-                          </th>
                           <th>
                             Name
                           </th>
@@ -793,94 +820,87 @@
                             Address
                           </th>
                         </thead>
-                        <tbody>
+                        <tbody class="text-muted">
                           <tr>
+						  <td>
+                             <p class="text-muted">
+                          Name of the place
+                        </p>
+						</td>
                             <td>
-                              1
-                            </td>
-                            <td>
-                              Hotel XxxXXX
-                            </td>
-                            <td>
-                              ul. Wolności 55, Warszawa
+                                  <p class="text-muted">
+                          ul. Mała 6, Kraków
+                        </p>
                             </td>
                           </tr>
                           <tr>
                             <td>
-                              2
+                            <p class="text-muted">
+                          Name of the place
+                        </p>
                             </td>
                             <td>
-                              Minerva Hooper
-                            </td>
-                            <td>
-                              Curaçao
+                                 <p class="text-muted">
+                          ul. Mała 6, Kraków
+                        </p>
                             </td>
                           </tr>
                           <tr>
                             <td>
-                              3
+                                  <p class="text-muted">
+                          Name of the place
+                        </p>
                             </td>
                             <td>
-                              Sage Rodriguez
-                            </td>
-                            <td>
-                              Netherlands
+                                <p class="text-muted">
+                          ul. Mała 6, Kraków
+                        </p>
                             </td>
                           </tr>
                           <tr>
-                            <td>
-                              4
-                            </td>
                             <td>
                               Philip Chaney
                             </td>
                             <td>
-                              Korea, South
+                                   <p class="text-muted">
+                          ul. Mała 6, Kraków
+                        </p>
                             </td>
                           </tr>
                           <tr>
-                            <td>
-                              5
-                            </td>
                             <td>
                               Doris Greene
                             </td>
                             <td>
-                              Malawi
-                            </td>
-                          </tr>
-                          <tr>
-                            <td>
-                              6
-                            </td>
-                            <td>
-                              Mason Porter
-                            </td>
-                            <td>
-                              Chile
+                                  <p class="text-muted">
+                          ul. Mała 6, Kraków
+                        </p>
                             </td>
                           </tr>
                         </tbody>
                       </table>
-                    </div>
-				 
-              <div class="card ">
-                <div class="card-header card-header-text card-header-rose">
-                  <div class="card-text">
-                    <h4 class="card-title">Regular Map</h4>
-                  </div>
-                </div>
-                <div class="card-body ">
-                  <h4 class="card-title"></h4>
-                  <div id="regularMap" class="map"></div>
-                </div>
-              </div>
-            </div>
-			
-		
-			</div>
-			
-			
+                    </div>				 
+            </div>			  			  			 
+			  <div class="col-lg-8 col-md-5 col-sm-6">
+                            <div class="card card-stats">
+                              <div class="card-header card-header-warning card-header-icon">
+                                <div class="card-icon">
+							
+                                  <i class="material-icons">message</i>
+                                </div>
+                                <p class="card-category">Amount</p>
+                                <h2 class="card-title">184</h2>
+                              </div>
+							  	<h4 class="card-title">MESSAGES FROM USERS</H4>
+                              <div class="card-footer">
+                                <div class="stats">
+                                  <i class="material-icons">local_offer</i> 
+                                  <a href="#pablo">See message...</a>
+                                </div>
+                              </div>
+                            </div>
+                     </div>			
+					</div>		
                       </div>
                     </div>
 					
@@ -932,9 +952,10 @@
                   </div>
                 </div>
               </div>
+ <!-- END MAPS-->	
+ 
 		 </div> 
-         </div> 
-				
+         </div> 			
 				 
           <div class="row">
             <div class="col-md-6">
@@ -997,7 +1018,7 @@
 
           </div>
         </div>
-      </div>
+      
       <footer class="footer">
         <div class="container-fluid">
           <nav class="float-left">
