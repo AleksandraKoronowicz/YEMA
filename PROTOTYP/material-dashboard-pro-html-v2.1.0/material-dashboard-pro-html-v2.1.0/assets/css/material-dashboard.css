@@ -15,6 +15,13 @@
 
 /*     brand Colors              */
 
+.container {
+  justify-content: space-evenly;
+}
+
+.item {
+  flex-grow: 1; /* default 0 */
+}
 
 .fill-height-or-more{
 	display: -webkit-box;
